@@ -1021,3 +1021,29 @@ footer p {
         color: #4a3b4e;
     }
 }
+
+/* Container for the widget */
+#google_translate_element {
+    margin-left: 20px;
+    padding: 5px;
+}
+
+/* Hide the Google "Powered by" branding to keep it clean */
+.goog-logo-link, .goog-te-gadget span, .goog-te-banner-frame {
+    display: none !important;
+}
+
+.goog-te-gadget {
+    color: transparent !important;
+    font-size: 0 !important;
+}
+
+/* Style the actual dropdown box */
+.goog-te-combo {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+    color: #333;
+    font-family: inherit;
+}
