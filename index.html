@@ -99,30 +99,33 @@
             <a href="https://www.magnific.com/">Images by Magnific</a>
         </div>
     </footer>
-<!-- The Google Translate Widget (Hidden) -->
-<div id="google_translate_element" style="display:block"></div>
+    
+    <div id="google_translate_element" style="display:none;"></div>
 
 <script type="text/javascript">
     function googleTranslateElementInit() {
         new google.translate.TranslateElement({
-            pageLanguage: 'en', 
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+            pageLanguage: 'en'
         }, 'google_translate_element');
     }
 
-    // This part handles the auto-detect and switch
-   (function autoTranslate() {
-        const shortLang = 'fr'; // Force it to French for now
+    (function autoTranslate() {
+        // 1. Get the language (Change 'fr' to test, or keep navigator.language for real use)
+        const userLang = navigator.language || navigator.userLanguage;
+        const shortLang = userLang.split('-')[0]; 
 
-        if (true) { // This makes the code run no matter what
-            const checkWidget = setInterval(() => {
+        if (shortLang !== 'en') {
+            // 2. This "Observer" waits for the Google widget to actually appear in the code
+            const observer = new MutationObserver(() => {
                 const select = document.querySelector('.goog-te-combo');
                 if (select) {
                     select.value = shortLang;
                     select.dispatchEvent(new Event('change'));
-                    clearInterval(checkWidget);
+                    observer.disconnect(); // Stop looking once we've translated
                 }
-            }, 5000); 
+            });
+
+            observer.observe(document.body, { childList: true, subtree: true });
         }
     })();
 </script>
