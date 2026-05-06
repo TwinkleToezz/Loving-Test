@@ -1038,12 +1038,33 @@ footer p {
     font-size: 0 !important;
 }
 
-/* Style the actual dropdown box */
+/* This hides the "Powered by Google" text and logo */
+.goog-te-gadget {
+    font-size: 0 !important;
+    color: transparent !important;
+}
+
+/* This fixes the text that remains after hiding the logo */
+.goog-te-gadget span {
+    display: none !important;
+}
+
+/* This styles the actual dropdown box to look cleaner */
 .goog-te-combo {
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background: #fff;
-    color: #333;
-    font-family: inherit;
+    padding: 6px 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-family: inherit; /* Matches your site's font */
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* This removes the annoying top-bar Google adds sometimes */
+body {
+    top: 0 !important;
+}
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
 }
