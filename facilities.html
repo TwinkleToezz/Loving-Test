@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Facilities | Loving Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/Images/logo.png" alt="Loving Homes Logo">
+                <span>Loving Homes</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#" class="active">Facilities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<main class="facilities-page">
+    <section class="facilities-header">
+        <h1>Our Facilities</h1>
+        <p>Explore our dedicated spaces designed for your dog's happiness and well-being.</p>
+    </section>
+
+    <div class="carousel-container">
+        <div class="carousel-slider">
+            
+            <div class="facility-slide">
+                <img src="Assets/Images/Woodland walk.png" alt="Woodland Walks">
+                <div class="slide-content">
+                    <h2>Woodland Walks</h2>
+                    <p>Our private woodland walks offer your dog a chance to explore natural trails in a calm, scenic environment away from the city noise.</p>
+                </div>
+            </div>
+
+            <div class="facility-slide">
+                <img src="Assets/Images/Indoorplay.jpg" alt="Indoor Play Barn">
+                <div class="slide-content">
+                    <h2>Indoor Play Barn</h2>
+                    <p>Rain or shine, our indoor play barn provides a massive, safe space for social activities and exercise in a fully climate-controlled setting.</p>
+                </div>
+            </div>
+
+            <div class="facility-slide">
+                <img src="Assets/Images/Fenced.jpeg" alt="Private Grass Areas">
+                <div class="slide-content">
+                    <h2>Private Grass Areas</h2>
+                    <p>For dogs who prefer their own space, our private grass areas offer a secure spot for quiet relaxation and one-on-one play.</p>
+                </div>
+            </div>
+
+            <div class="facility-slide">
+                <img src="Assets/Images/Security-Cameras.jpg" alt="Pet Watch">
+                <div class="slide-content">
+                    <h2>Pet Watch</h2>
+                    <p>Our Pet Watch hub is the heart of our safety operations, where trained staff monitor all areas of the hotel 24/7 to ensure every guest is safe and comfortable.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+    <footer>
+        <p>&copy; 2026 Loving Homes. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="https://www.magnific.com/">Images by Magnific</a>
+        </div>
+    </footer>
+<!-- The Google Translate Widget (Hidden) -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+
+    // This part handles the auto-detect and switch
+    (function autoTranslate() {
+        const userLang = navigator.language || navigator.userLanguage; 
+        const shortLang = userLang.split('-')[0]; // Gets 'fr' from 'fr-FR'
+
+        if (shortLang !== 'en') {
+            const checkWidget = setInterval(() => {
+                const select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = shortLang;
+                    select.dispatchEvent(new Event('change'));
+                    clearInterval(checkWidget);
+                }
+            }, 500); // Checks every 0.5s until the widget loads
+        }
+    })();
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

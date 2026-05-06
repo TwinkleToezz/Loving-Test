@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loving Homes | Dog Hotel Hong Kong</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="Assets/Images/logo.ico">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/Images/logo.png" alt="Loving Homes Logo">
+                <span>Loving Homes</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="booking.html">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>The Ultimate Stay for Your Furry Friend!</h1>
+            <p>At Loving Homes, we ensure your dog enjoys a luxurious and comfortable stay while you're away.</p>
+            <a href="booking.html" class="btn">Book Now</a>
+        </div>
+        <div class="hero-image">
+            <img src="Assets/Images/Dogs" alt="Dog playing with ball">
+        </div>
+    </section>
+
+    <section class="facilities">
+        <h2>Why Choose Us?</h2>
+        <p class="sub-text">We provide the best care for your pups in a friendly environment.</p>
+        
+        <div class="facility-grid">
+            <div class="facility-card">
+                <img src="Assets/Images/Grooming.png" alt="Grooming">
+                <div>
+                    <h3>Grooming Parlour and Spa</h3>
+                    <p>Our specialized grooming parlour and spa provide a luxury experience where your pet can enjoy professional treatments.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="Assets/Images/Vet.jpg" alt="Vet Services">
+                <div>
+                    <h3>24-Hour On-Call Veterinary Services</h3>
+                    <p>We prioritize your dog's safety above all else with 24-hour on-call veterinary support available at a moment's notice.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="Assets/Images/maxresdefault.jpg" alt="Chauffeur">
+                <div>
+                    <h3>Chauffeur Collect and Return Service</h3>
+                    <p>Our premium chauffeur service offers secure and stress-free transport from your doorstep directly to our care.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="Assets/Images/Thermostat.jpg" alt="Underfloor heating">
+                <div>
+                    <h3>Underfloor Heating/Cooling & TV</h3>
+                    <p>Each room is a climate-controlled sanctuary featuring underfloor heating and cooling, paired with a private TV.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="Assets/Images/Security.png" alt="Paddocks">
+                <div>
+                    <h3>Secure Out Door Paddocks</h3>
+                    <p>Our secure outdoor paddocks provide a safe and spacious environment where your dog can run freely with peace of mind.</p>
+                </div>
+            </div>
+
+            <div class="facility-card">
+                <img src="Assets/Images/Team" alt="Staff">
+                <div>
+                    <h3>Experienced Staff</h3>
+                    <p>Our staff members are passionate and trained to provide top-notch care.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Loving Homes. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="https://www.magnific.com/">Images by Magnific</a>
+        </div>
+    </footer>
+<!-- The Google Translate Widget (Hidden) -->
+<div id="google_translate_element" style="display:block"></div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+
+    // This part handles the auto-detect and switch
+   (function autoTranslate() {
+        const shortLang = 'fr'; // Force it to French for now
+
+        if (true) { // This makes the code run no matter what
+            const checkWidget = setInterval(() => {
+                const select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = shortLang;
+                    select.dispatchEvent(new Event('change'));
+                    clearInterval(checkWidget);
+                }
+            }, 5000); 
+        }
+    })();
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

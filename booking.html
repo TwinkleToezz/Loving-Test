@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Stay | Loving Homes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Assets/Images/logo.png" alt="Loving Homes Logo">
+                <span>Loving Homes</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="facilities.html">Facilities</a></li>
+                <li><a href="#" class="active">Booking</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="booking-container">
+        <section class="booking-header">
+            <h1>Book Your Dog's Stay</h1>
+            <p>Provide your furry friend with a cozy and fun environment.</p>
+        </section>
+
+        <section class="activity-tracker">
+    <div class="section-title">
+        <h2>Daily Activity Tracker</h2>
+    </div>
+    <div class="activity-list">
+        <div class="activity-item">
+            <div class="activity-img-wrapper">
+                <img src="Assets/Images/Woodland walk.png" alt="Woodland Walk">
+            </div>
+            <div class="activity-text">
+                <h3>Woodland Walk (10am)</h3>
+                <p>Enjoy a relaxing stroll in our beautiful woods.</p>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-img-wrapper">
+                <img src="Assets/Images/Fenced.jpeg" alt="Indoor Play Barn">
+            </div>
+            <div class="activity-text">
+                <h3>Indoor Play Barn (2pm)</h3>
+                <p>Have fun and play with other pups in our indoor barn.</p>
+            </div>
+        </div>
+
+        <div class="activity-item">
+            <div class="activity-img-wrapper">
+                <img src="Assets/Images/day.jpg" alt="Spa and Grooming">
+            </div>
+            <div class="activity-text">
+                <h3>Spa & Grooming (4pm)</h3>
+                <p>Pamper your furry friend with our grooming services.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="booking-packages">
+    <div class="package-grid">
+        
+        <div class="p-card">
+            <div class="p-img-header">
+                <img src="Assets/Images/day.jpg" alt="Day Package">
+                <div class="p-overlay">Day Package</div>
+            </div>
+            <div class="p-info">
+                <h4>Day Package</h4>
+                <ul>
+                    <li>Two walks per day</li>
+                    <li>External play area access</li>
+                    <li>Agility track</li>
+                    <li>Sand digging pit</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <div class="p-img-header">
+                <img src="Assets/Images/classic.jpg" alt="Classic Package">
+                <div class="p-overlay">Classic Package</div>
+            </div>
+            <div class="p-info">
+                <h4>Classic Package</h4>
+                <ul>
+                    <li>Three walks/activities per day</li>
+                    <li>Indoor play barn access</li>
+                    <li>Zen zone relaxation</li>
+                    <li>Grooming session</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="p-card">
+            <div class="p-img-header">
+                <img src="Assets/Images/Premium.jpg" alt="Premium Package">
+                <div class="p-overlay">Premium Package</div>
+            </div>
+            <div class="p-info">
+                <h4>Premium Package</h4>
+                <ul>
+                    <li>Four walks/activities per day</li>
+                    <li>Private grass area</li>
+                    <li>Daily photo/video updates</li>
+                    <li>Custom Treats</li>
+                </ul>
+            </div>
+        </div>
+        <div class="p-card">
+    <div class="p-img-header">
+        <img src="Assets/Images/worker.jpg" alt="Custom Package">
+        <div class="p-overlay">Custom Package</div>
+    </div>
+    <div class="p-info">
+        <h4>Custom Package</h4>
+        <ul>
+            <li>Tailored activity schedule</li>
+            <li>Select your preferred meals</li>
+            <li>One-on-one training sessions</li>
+            <li>Flexible check-in/out times</li>
+        </ul>
+    </div>
+</div>
+    </div>
+</section>
+
+        <section class="make-booking">
+            <div class="section-title">
+                <h2>Make a Booking</h2>
+            </div>
+            <form class="booking-form">
+            <div class="form-group">
+                <label>Select Package</label>
+                <div class="segmented-control" id="packageSelector">
+                    <button type="button" class="package-btn" data-package="Premium">Premium</button>
+                    <button type="button" class="package-btn" data-package="Classic">Classic</button>
+                    <button type="button" class="package-btn" data-package="Day">Day</button>
+                    <button type="button" class="package-btn" data-package="Custom">Custom</button>
+                </div>
+                <input type="hidden" name="selected_package" id="selectedPackageInput">
+            </div>
+
+            <div class="form-group">
+                <label for="check-in">Check-in Date</label>
+                <input type="date" id="check-in" class="date-picker">
+            </div>
+
+            <div class="form-group">
+                <label for="check-out">Check-out Date</label>
+                <input type="date" id="check-out" class="date-picker">
+            </div>
+            <div class="form-group">
+                    <label for="needs">Custom Stay Requirements</label>
+                    <input type="text" id="needs" placeholder="Any specific needs?">
+            </div>
+
+                <button type="submit" class="submit-btn">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Loving Homes. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="https://www.magnific.com/">Images by Magnific</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- The Google Translate Widget (Hidden) -->
+<div id="google_translate_element" style="display:none;"></div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en', 
+            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+        }, 'google_translate_element');
+    }
+
+    // This part handles the auto-detect and switch
+    (function autoTranslate() {
+        const userLang = navigator.language || navigator.userLanguage; 
+        const shortLang = userLang.split('-')[0]; // Gets 'fr' from 'fr-FR'
+
+        if (shortLang !== 'en') {
+            const checkWidget = setInterval(() => {
+                const select = document.querySelector('.goog-te-combo');
+                if (select) {
+                    select.value = shortLang;
+                    select.dispatchEvent(new Event('change'));
+                    clearInterval(checkWidget);
+                }
+            }, 500); // Checks every 0.5s until the widget loads
+        }
+    })();
+
+</script>
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
